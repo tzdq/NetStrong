@@ -5,7 +5,6 @@
 NetStrong定时将日志以 EMail 方式发送给开发者
 
 ![image](doc/image/DragonBall.jpg)
-![image](doc/image/run.jpg)
 
 # 服务器性能
 - 运行于Linux系统，采用epoll机制
@@ -37,6 +36,7 @@ NetStrong定时将日志以 EMail 方式发送给开发者
 - **数据内容**： nByte，格式根据 **命令码** 而定
 - **结束帧标志** ：4Byte，固定填充0xeeeeffff
 
+
 ##NetStrong协议
 - **原协议** 的命令吗填写0x20000002
 - **数据内容**
@@ -44,6 +44,7 @@ NetStrong定时将日志以 EMail 方式发送给开发者
 	- **线程ID**： 4Byte，NetStrong客户端如果有多个客户端连接服务器，客户端给自己的线程ID编号，每个线程ID独一无二
 	- **发送时间**： 16Byte，NetStrong客户端写入每次封包的时间，格式以 "yyyy-mm-dd HH-MM-SS"
 
+**在本工程里提供了已经封装好的数据包，目录位置./netpacket/*.bin，如1k.bin表示发送1024Byte的测试数据包，其中包含原始数据包，所以数据长度应该是1024+40Byte**
 
 ##日志保存格式
 分为2部分，
@@ -84,7 +85,7 @@ save time     2016-01-31 21:43:19		自动保存时间
 **2016-1-27 9:23:2**  
 客户端发送数据的时间，鉴别客户端每秒发送多少次数据包
 
-![image](doc/image/logo.jpg)
+
 
 
 
