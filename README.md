@@ -5,6 +5,7 @@
 NetStrong定时将日志以 EMail 方式发送给开发者
 
 ![image](doc/image/DragonBall.jpg)
+![image](doc/image/run.jpg)
 
 # 服务器性能
 - 运行于Linux系统，采用epoll机制
@@ -91,3 +92,4 @@ save time     2016-01-31 21:43:19		自动保存时间
 
 
 
+![image](doc/image/logo.jpg)
